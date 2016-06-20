@@ -20,5 +20,4 @@ function locks(response, postData) {
 }
 
 exports.start = start;
-exports.upload = upload;
 exports.locks = locks;
