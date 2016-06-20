@@ -1,0 +1,12 @@
+{
+  "name": "esocial",
+  "dependencies": {
+    "sails": "0.11.x"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "devDependencies": {
+    "sails-deploy-azure": "^0.2.12"
+  }
+}
