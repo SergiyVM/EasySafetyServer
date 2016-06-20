@@ -2,11 +2,9 @@ var querystring = require("querystring");
 
 function start(response, postData) {
     console.log("Request handler '/' was called.");
-    var body = '<html><head><meta http-equiv="refresh" content="0; url=http://easysafety.esy.es/" /></head></html>';
-    response.writeHead(200, {
-        "Content-Type": "text/html"
+    response.writeHead(301, {
+        Location: 'http://easysafety.esy.es'
     });
-    response.write(body);
     response.end();
 }
 
