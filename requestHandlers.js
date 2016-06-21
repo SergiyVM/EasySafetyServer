@@ -11,7 +11,7 @@ function start(response, postData) {
 function locks(response, postData) {
     console.log("Request handler 'locks' was called.");
 
-    var body = "postData: " + JSON.stringify(querystring.parse(postData));
+    var body = "postData: " + JSON.stringify(postData);
     response.writeHead(200, {
         "Content-Type": "text/html"
     });
