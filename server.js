@@ -9,14 +9,11 @@ function start(route, handle) {
         console.log("Request for " + pathname + " received.");
 
         request.setEncoding("utf8");
-
-        request.addListener("data", function (postDataChunk) {
-            postData += postDataChunk;
-            console.log("Received POST data chunk '" +
-                postDataChunk + "'.");
+        
+        request.on('data', function (chunk) {
+            postData += chunk.toString();
         });
-
-        request.addListener("end", function () {
+        request.on('end', function () {
             route(handle, pathname, response, postData);
         });
 
