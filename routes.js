@@ -7,7 +7,7 @@ var appRouter = function (app) {
             res.send(data);
         };
         db.Test(callback);
-    }
+    });
         
     app.post("/locks", function (req, res) {
         var callback = function (data) {
