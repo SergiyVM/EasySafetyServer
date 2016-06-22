@@ -1,6 +1,14 @@
 var db = require("./db.js");
 
 var appRouter = function (app) {
+    
+    app.post("/test", function (req, res) {
+        var callback = function (data) {
+            res.send(data);
+        };
+        db.Test(callback);
+    }
+        
     app.post("/locks", function (req, res) {
         var callback = function (data) {
             res.send(data);

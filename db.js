@@ -8,6 +8,9 @@ var connection = mysql.createConnection({
     database: 'easysafetydb'
 });
 
+function Test(callback) {
+    callback("Test!");
+}
 
 function ShowLocks(gToken, callback) {
     var locks = {};
@@ -80,6 +83,7 @@ function RemoveAccessToken(gToken, accessToken) {}
 
 function AddEventToHistory(accessToken) {}
 
+exports.Test = Test;
 exports.ShowLocks = ShowLocks;
 exports.AddNewLock = AddNewLock;
 exports.EditLock = EditLock;
