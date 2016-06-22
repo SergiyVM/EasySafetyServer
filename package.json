@@ -1,7 +1,11 @@
 {
-    "name": "EasySafetyServer",
-    "dependencies": {
-        "express": "^4.10.6",
-        "mysql": "^2.5.4"
-    }
+  "name": "EasySafetyServer",
+  "version": "1.0.0",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "js-md5": "^0.4.1",
+    "mysql": "^2.11.1",
+    "request": "^2.72.0"
+  }
 }
